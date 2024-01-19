@@ -4,15 +4,19 @@ import java.util.*;
 
 
 public class Sample06 {
+    static Scanner sc;
+    // contructor
+    Sample06(){
+        sc = new Scanner(System.in);
+    }
+
     public static void main(String [] arsg){
         gugudanGame();
     }
 
     public static int guessNum(){
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter any number between 1 and 100 : ");
         int temp = sc.nextInt();
-        sc.close();
 
         return temp;
     }
@@ -50,6 +54,7 @@ public class Sample06 {
                 System.out.println("Try it again");
             }
         }
+        sc.close();
     }
 
 }
