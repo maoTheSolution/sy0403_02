@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 class Student{
     String name;
     int age;
@@ -27,5 +30,20 @@ class Student{
 
 
 class Sample01{
-    
+    public static void main(String []args){
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your name : ");
+        String name = sc.nextLine();
+        System.out.println(name +", Welcome!");
+        sc.close();
+        // Student [] stdList = new Student[5];
+        // for(int i=0; i<stdList.length; i++){
+        //     stdList[i] = new Student("Adam", 18, 160.59);
+        // }
+
+        // for(int i=0; i<5; i++){
+        //     System.out.println(stdList[i].getName());
+        // }
+    }
 }
