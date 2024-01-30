@@ -1,7 +1,7 @@
 class Person{
-    String name;
-    int age;
-    double height;
+    protected String name;
+    protected int age;
+    private double height;
 
     Person(String name, int age, double height){
         this.name = name;
@@ -51,5 +51,6 @@ public class Sample02 {
         Teacher t01 = new Teacher("Adam", 100, 130.05, "Math", "nobody@gmail.com");
         System.out.println(t01.getName());
         System.out.println(t01.getSubject());
+        System.out.println(t01.getHeight());
     }
 }
