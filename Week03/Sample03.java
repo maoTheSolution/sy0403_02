@@ -58,17 +58,13 @@ public class Sample02 {
         // Parent = new Parent  -> can use all functions in Parent
         Person p01 = new Person("Adam", 14, 130.55);
         // Parent = new Child   -> can use all functions in Parent 
-        Person p02 = new Teacher("Adam", 10, 180.33, "CS", "mmmm@gmail.com");
+        Teacher t02 = new Teacher("Adam", 10, 180.33, "CS", "mmmm@gmail.com");
         // p02.emailAddr();
         // Child = new Child -> can use all functions in Parent and Child
         Teacher t01 = new Teacher("Adam", 10, 180.33, "CS", "mmmm@gmail.com");
         t01.getEmailAddr();
         // Child = new Parent
         // Teacher t01 =  new Person("Adam", 14, 130.55);
-
-
-        
-
 
     }
 }
