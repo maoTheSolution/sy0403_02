@@ -77,7 +77,9 @@ public class Sample03 {
             System.out.println(t_arr[i].getName());
         }
 
-        // for(Teacher )...
+        for(Teacher target:t_arr){
+            System.out.println(target.getName());
+        }
 
     }
 }
