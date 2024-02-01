@@ -44,7 +44,7 @@ class Teacher extends Person{
 
 }
 
-public class Sample02 {
+public class Sample03 {
     public static void main(String [] args){
         // Person p01 = new Person("Adam", 13, 130.5);
         // System.out.println(p01.getHeight());
@@ -61,10 +61,23 @@ public class Sample02 {
         Teacher t02 = new Teacher("Adam", 10, 180.33, "CS", "mmmm@gmail.com");
         // p02.emailAddr();
         // Child = new Child -> can use all functions in Parent and Child
-        Teacher t01 = new Teacher("Adam", 10, 180.33, "CS", "mmmm@gmail.com");
+        Teacher t01 = new Teacher("Seoyoung", 10, 180.33, "CS", "mmmm@gmail.com");
         t01.getEmailAddr();
         // Child = new Parent
         // Teacher t01 =  new Person("Adam", 14, 130.55);
+
+
+
+
+        Teacher [] t_arr = new Teacher[2];
+        t_arr[0] = t01;
+        t_arr[1] = t02;
+
+        for(int i=0; i<t_arr.length; i=i+1){
+            System.out.println(t_arr[i].getName());
+        }
+
+        // for(Teacher )...
 
     }
 }
